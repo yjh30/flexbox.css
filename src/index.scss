@@ -1,10 +1,10 @@
-@mixin flex-row-box {
+@mixin flex-row {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-@mixin flex-column-box {
+@mixin flex-column {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,37 +17,37 @@
 /**
  *  main axis
  */
-.flex-row-box, .flex-box {
-    @include flex-row-box;
+.flex-row, .flex {
+    @include flex-row;
 }
 
 /**
  *  main axis between
  */
-.flex-row-between-box {
-    @include flex-row-box;
+.flex-row-between {
+    @include flex-row;
     justify-content: space-between;
 }
 
 /**
  *  cross axis 
  */
-.flex-column-box {
-    @include flex-column-box;
+.flex-column {
+    @include flex-column;
 }
 
 /**
  *  cross axis between
  */
-.flex-column-between-box {
-    @include flex-column-box;
+.flex-column-between {
+    @include flex-column;
     justify-content: space-between;
 }
 
 /**
  *  main & cross axis center 
  */
-.flex-center-box {
+.flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,7 +62,6 @@
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
-    transform: translate3d(0, 0, 0);
 }
 
 .flex-item-scroll-y {
@@ -70,15 +69,14 @@
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    transform: translate3d(0, 0, 0);
 }
 
 
 /**
  *  删格布局，支持10列
  */
-.flex-cell-box {
-    @include flex-row-box;
+.flex-cell {
+    @include flex-row;
     flex-wrap: wrap;
     .col-1 {
         width: getPercentage(1);
