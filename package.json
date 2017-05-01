@@ -1,6 +1,6 @@
 {
   "name": "flexbox.css",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "弹性盒子CSS预设类名",
   "main": "./build/index.css",
   "scripts": {
